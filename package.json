@@ -1,5 +1,6 @@
 {
-    "name": "bootstrap"
+    "name": "cprkcstrap"
+  , "private": true
   , "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development."
   , "version": "2.9.1"
   , "keywords": ["bootstrap", "css"]

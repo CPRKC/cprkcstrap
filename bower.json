@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap",
+  "name": "cprkcstrap",
   "version": "2.9.1",
   "main": ["./docs/assets/js/bootstrap.js", "./docs/assets/css/bootstrap.css"],
   "dependencies": {
