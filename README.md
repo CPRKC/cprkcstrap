@@ -12,7 +12,7 @@ Three quick start options are available:
 
 * [Download the latest release](https://github.com/twitter/bootstrap/zipball/master).
 * Clone the repo: `git clone git://github.com/twitter/bootstrap.git`.
-* Install with Twitter's [Bower](http://twitter.github.com/bower): `bower install bootstrap`.
+* Install with Twitter's [Bower](http://github.com/bower/bower): `bower install bootstrap`.
 
 Read the [Getting Started page](http://getbootstrap.com/getting-started/) for information on the framework contents, basic template guidelines, and more.
 
@@ -35,7 +35,7 @@ Have a bug or a feature request? [Please open a new issue](https://github.com/tw
 
 ## Documentation
 
-Bootstrap's docs are built using [Jekyll](http://jekyllrb.com) and hosted on GitHub Pages at [http://getbootstrap.com](http://getbootstrap.com). To view our docs locally, you'll need to [install Jekyll](https://github.com/mojombo/jekyll/wiki/install) to run a local server.
+Bootstrap's docs are built using [Jekyll](http://jekyllrb.com) and hosted on GitHub Pages at [http://getbootstrap.com](http://getbootstrap.com). To view our docs locally, you'll need to [install Jekyll](http://jekyllrb.com/docs/installation) to run a local server.
 
 Documentation for [previous versions](https://github.com/twitter/bootstrap/tags) is also available via tags.
 
