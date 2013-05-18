@@ -1,6 +1,6 @@
 $(function () {
 
-    module("bootstrap-tabs")
+    module("tabs")
 
       test("should provide no conflict", function () {
         var tab = $.fn.tab.noConflict()
@@ -53,12 +53,12 @@ $(function () {
         $.support.transition = false
         stop();
         $('<div class="tab"/>')
-          .bind('show', function (e) {
+          .on('show.bs.tab', function (e) {
             e.preventDefault();
             ok(true);
             start();
           })
-          .bind('shown', function () {
+          .on('shown.bs.tab', function () {
             ok(false);
           })
           .tab('show')

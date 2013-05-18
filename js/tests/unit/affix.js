@@ -1,6 +1,6 @@
 $(function () {
 
-    module("bootstrap-affix")
+    module("affix")
 
       test("should provide no conflict", function () {
         var affix = $.fn.affix.noConflict()
@@ -18,7 +18,7 @@ $(function () {
 
       test("should exit early if element is not visible", function () {
         var $affix = $('<div style="display: none"></div>').affix()
-        $affix.data('affix').checkPosition()
+        $affix.data('bs.affix').checkPosition()
         ok(!$affix.hasClass('affix'), 'affix class was not added')
       })
 

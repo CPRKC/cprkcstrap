@@ -1,6 +1,6 @@
 $(function () {
 
-    module("bootstrap-collapse")
+    module("collapse")
 
       test("should provide no conflict", function () {
         var collapse = $.fn.collapse.noConflict()
@@ -32,12 +32,12 @@ $(function () {
         $.support.transition = false
         stop()
         $('<div class="collapse"/>')
-          .bind('show', function (e) {
+          .on('show.bs.collapse', function (e) {
             e.preventDefault();
             ok(true);
             start();
           })
-          .bind('shown', function () {
+          .on('shown.bs.collapse', function () {
             ok(false);
           })
           .collapse('show')
@@ -47,10 +47,10 @@ $(function () {
         $.support.transition = false
         stop()
         $('<div class="collapse" style="height: 0px"/>')
-          .bind('show', function () {
+          .on('show.bs.collapse', function () {
             ok(this.style.height == '0px')
           })
-          .bind('shown', function () {
+          .on('shown.bs.collapse', function () {
             ok(this.style.height == 'auto')
             start()
           })
@@ -66,7 +66,7 @@ $(function () {
 
         var collapsible = $('<div id="test1"></div>')
           .appendTo($('#qunit-fixture'))
-          .on('show', function () {
+          .on('show.bs.collapse', function () {
             ok(!target.hasClass('collapsed'))
             start()
           })
@@ -83,7 +83,7 @@ $(function () {
 
         var collapsible = $('<div id="test1" class="in"></div>')
           .appendTo($('#qunit-fixture'))
-          .on('hide', function () {
+          .on('hide.bs.collapse', function () {
             ok(target.hasClass('collapsed'))
             start()
           })

@@ -1,6 +1,6 @@
 $(function () {
 
-    module("bootstrap-dropdowns")
+    module("dropdowns")
 
       test("should provide no conflict", function () {
         var dropdown = $.fn.dropdown.noConflict()
@@ -103,6 +103,7 @@ $(function () {
             .find('[data-toggle="dropdown"]')
             .dropdown()
             .click()
+
         ok(dropdown.parent('.dropdown').hasClass('open'), 'open class added on click')
         $('body').click()
         ok(!dropdown.parent('.dropdown').hasClass('open'), 'open class removed')

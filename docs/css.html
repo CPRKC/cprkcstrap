@@ -67,6 +67,7 @@ lead: "Fundamental HTML elements styled and enhanced with extensible classes."
 
     <h3 id="grid-example">Grid example</h3>
     <p>On mobile devices, the grid starts out stacked. Above 768px, it becomes horizontal as media queries kick in to apply <code>float</code>s and <code>width</code>s. To create a basic grid layout, wrap a series of <code>.col-lg-*</code> elements within a <code>.row</code>. As this is a 12-column grid, each <code>.col-lg-*</code> spans a number of those 12 columns, and should always add up to 12 for each row (or the number of columns in the parent), even at mobile resolutions.</p>
+    <p>Be sure to checkout the <a href="../examples/grid/">full-page grid example</a> as well.</p>
     <div class="bs-docs-grid">
       <div class="row show-grid">
         <div class="col col-lg-1">1</div>
@@ -1077,13 +1078,13 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
     <p>Use Bootstrap's predefined grid classes to align labels and groups of form controls in a horizontal layout.</p>
     <form class="bs-example form-horizontal">
       <div class="row">
-        <label for="inputEmail" class="col col-lg-2 row-label">Email</label>
+        <label for="inputEmail" class="col col-lg-2 control-label">Email</label>
         <div class="col col-lg-10">
           <input type="text" id="inputEmail" placeholder="Email">
         </div>
       </div>
       <div class="row">
-        <label for="" class="col col-lg-2 row-label">Password</label>
+        <label for="" class="col col-lg-2 control-label">Password</label>
         <div class="col col-lg-10">
           <input type="password" id="inputPassword" placeholder="Password">
           <div class="checkbox">
@@ -1100,13 +1101,13 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 {% highlight html %}
 <form class="form-horizontal">
   <div class="row">
-    <label for="inputEmail" class="col col-lg-2 row-label">Email</label>
+    <label for="inputEmail" class="col col-lg-2 control-label">Email</label>
     <div class="col col-lg-10">
       <input type="text" id="inputEmail" placeholder="Email">
     </div>
   </div>
   <div class="row">
-    <label for="" class="col col-lg-2 row-label">Password</label>
+    <label for="" class="col col-lg-2 control-label">Password</label>
     <div class="col col-lg-10">
       <input type="password" id="inputPassword" placeholder="Password">
       <div class="checkbox">
@@ -1506,7 +1507,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
     <form class="bs-example">
       <div class="input-group col col-lg-7">
         <div class="input-group-btn">
-          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -1521,7 +1522,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
       <div class="input-group col col-lg-7">
         <input type="text">
         <div class="input-group-btn">
-          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
           <ul class="dropdown-menu">
             <li><a href="#">Action</a></li>
             <li><a href="#">Another action</a></li>
@@ -1535,7 +1536,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 {% highlight html %}
 <div class="input-group col col-lg-7">
   <div class="input-group-btn">
-    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
     <ul class="dropdown-menu">
       <li><a href="#">Action</a></li>
       <li><a href="#">Another action</a></li>
@@ -1550,7 +1551,7 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
 <div class="input-group col col-lg-7">
   <input type="text">
   <div class="input-group-btn">
-    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
+    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
     <ul class="dropdown-menu">
       <li><a href="#">Action</a></li>
       <li><a href="#">Another action</a></li>
@@ -1566,8 +1567,8 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
     <form class="bs-example">
       <div class="input-group col col-lg-7">
         <div class="input-group-btn">
-          <button class="btn btn-default" tabindex="-1">Action</button>
-          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+          <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu">
@@ -1586,8 +1587,8 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
       <div class="input-group col col-lg-7">
         <input type="text">
         <div class="input-group-btn">
-          <button class="btn btn-default" tabindex="-1">Action</button>
-          <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+          <button type="button" class="btn btn-default" tabindex="-1">Action</button>
+          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" tabindex="-1">
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu">
@@ -1660,21 +1661,6 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
   <div class="col col-lg-4">
     <input type="text" placeholder="col col-large-4">
   </div>
-</div>
-{% endhighlight %}
-
-    <h3 id="forms-actions">Form actions</h3>
-    <p>End a form with a group of actions (buttons). When placed within a <code>.form-horizontal</code>, the buttons will automatically indent to line up with the form controls.</p>
-    <form class="bs-example">
-      <div class="form-actions">
-        <button type="submit" class="btn btn-primary">Save changes</button>
-        <button type="button" class="btn btn-default">Cancel</button>
-      </div>
-    </form>
-{% highlight html %}
-<div class="form-actions">
-  <button type="submit" class="btn btn-primary">Save changes</button>
-  <button type="button" class="btn btn-default">Cancel</button>
 </div>
 {% endhighlight %}
 
@@ -1875,10 +1861,10 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
     <h3>Close icon</h3>
     <p>Use the generic close icon for dismissing content like modals and alerts.</p>
     <div class="bs-example">
-      <p><button class="close" style="float: none;">&times;</button></p>
+      <p><button type="button" class="close">&times;</button></p>
     </div>
 {% highlight html %}
-<button class="close" style="float: none;">&times;</button>
+<button type="button" class="close">&times;</button>
 {% endhighlight %}
 
     <h3>.pull-left</h3>
@@ -1942,9 +1928,9 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
         <thead>
           <tr>
             <th>Class</th>
-            <th>Phones <small>767px and below</small></th>
-            <th>Tablets <small>979px to 768px</small></th>
-            <th>Desktops <small>Default</small></th>
+            <th>Small devices <small>Up to 768px</small></th>
+            <th>Medium devices <small>768px to 979px</small></th>
+            <th>Large devices <small>980px and up</small></th>
           </tr>
         </thead>
         <tbody>
@@ -2012,23 +1998,41 @@ For example, <code>&lt;section&gt;</code> should be wrapped as inline.
     </table>
 
     <h3>When to use</h3>
-    <p>Use on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation. Responsive utilities should not be used with tables, and as such are not supported.</p>
+    <p>Use on a limited basis and avoid creating entirely different versions of the same site. Instead, use them to complement each device's presentation. Responsive utilities are currently only available for block-level toggling, meaning <code>display: none;</code> or <code>display: block;</code>. Use with inline and table elements is currently not supported.</p>
 
     <h3>Test case</h3>
-    <p>Resize your browser or load on different devices to test the above classes.</p>
+    <p>Resize your browser or load on different devices to test the responsive utility classes.</p>
     <h4>Visible on...</h4>
-    <p>Green checkmarks indicate that class is visible in your current viewport.</p>
-    <ul class="responsive-utilities-test">
-      <li>Phone<span class="visible-sm">&#10004; Phone</span></li>
-      <li>Tablet<span class="visible-md">&#10004; Tablet</span></li>
-      <li>Desktop<span class="visible-lg">&#10004; Desktop</span></li>
+    <p>Green checkmarks indicate the element <strong>is visible</strong> in your current viewport.</p>
+    <ul class="responsive-utilities-test visible-on">
+      <li>
+        <span class="hidden-sm">Small</span>
+        <span class="visible-sm">&#10004; Visible on small</span>
+      </li>
+      <li>
+        <span class="hidden-md">Medium</span>
+        <span class="visible-md">&#10004; Visible on medium</span>
+      </li>
+      <li>
+        <span class="hidden-lg">Large</span>
+        <span class="visible-lg">&#10004; Visible on large</span>
+      </li>
     </ul>
     <h4>Hidden on...</h4>
-    <p>Here, green checkmarks indicate that class is hidden in your current viewport.</p>
+    <p>Here, green checkmarks indicate the element <strong>is hidden</strong> in your current viewport.</p>
     <ul class="responsive-utilities-test hidden-on">
-      <li>Phone<span class="hidden-sm">&#10004; Phone</span></li>
-      <li>Tablet<span class="hidden-md">&#10004; Tablet</span></li>
-      <li>Desktop<span class="hidden-lg">&#10004; Desktop</span></li>
+      <li>
+        <span class="visible-sm">Small</span>
+        <span class="hidden-sm">&#10004; Hidden on small</span>
+      </li>
+      <li>
+        <span class="visible-md">Medium</span>
+        <span class="hidden-md">&#10004; Hidden on medium</span>
+      </li>
+      <li>
+        <span class="visible-lg">Large</span>
+        <span class="hidden-lg">&#10004; Hidden on desktop</span>
+      </li>
     </ul>
 
   </div>
