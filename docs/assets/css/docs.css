@@ -95,7 +95,6 @@ body {
 }
 
 
-
 /* Customize and Download button
 -------------------------------------------------- */
 
@@ -313,7 +312,7 @@ body {
 .bs-example > .well:last-child {
   margin-bottom: 0;
 }
-.bs-example > .close {
+.bs-example > p > .close {
   float: none;
 }
 
@@ -603,6 +602,7 @@ body {
 }
 .footer-links {
   margin: 10px 0;
+  padding-left: 0;
 }
 .footer-links li {
   display: inline;
@@ -618,7 +618,8 @@ body {
 }
 .bs-social-buttons {
   display: inline-block;
-  margin: 0;
+  margin-bottom: 0;
+  padding-left: 0;
   list-style: none;
 }
 .bs-social-buttons li {
