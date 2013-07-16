@@ -2,7 +2,7 @@
     "name": "cprkcstrap"
   , "private": true
   , "description": "Sleek, intuitive, and powerful front-end framework for faster and easier web development."
-  , "version": "2.9.11"
+  , "version": "2.9.12"
   , "keywords": ["bootstrap", "css"]
   , "homepage": "http://twitter.github.com/bootstrap/"
   , "author": "Twitter Inc."

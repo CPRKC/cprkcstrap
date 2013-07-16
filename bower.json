@@ -1,6 +1,6 @@
 {
   "name": "cprkcstrap",
-  "version": "2.9.11",
+  "version": "2.9.12",
   "main": ["./docs/assets/js/bootstrap.js", "./docs/assets/css/bootstrap.css"],
   "dependencies": {
     "jquery": "*"
