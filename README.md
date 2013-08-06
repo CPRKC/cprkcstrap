@@ -16,12 +16,6 @@ Three quick start options are available:
 
 Read the [Getting Started page](http://getbootstrap.com/getting-started/) for information on the framework contents, templates and examples, and more.
 
-### Notes
-
-Jekyll can be weird in Windows powershell. If you get errors running Jekyll in windows, fix utf-8 encoding errors (??) - run in terminal
-
-    chcp 65001
-
 ## Bugs and feature requests
 
 Have a bug or a feature request? [Please open a new issue](https://github.com/twbs/bootstrap/issues). Before opening any issue, please search for existing issues and read the [Issue Guidelines](https://github.com/necolas/issue-guidelines), written by [Nicolas Gallagher](https://github.com/necolas/).
