@@ -2,7 +2,7 @@
 layout: default
 title: Components
 slug: components
-lead: "Dozens of reusable components built to provide iconography, dropdowns, navigation, alerts, popovers, and much more."
+lead: "Over a dozen reusable components built to provide iconography, dropdowns, navigation, alerts, popovers, and much more."
 base_url: "../"
 ---
 
@@ -160,34 +160,40 @@ base_url: "../"
     <h3 id="btn-groups-sizing">Button group sizing</h3>
     <p>Instead of applying button sizing classes to every button in a group, just add <code>.btn-group-*</code> to the <code>.btn-group</code>.</p>
     <div class="bs-example">
-      <div class="btn-group btn-group-lg">
-        <button type="button" class="btn btn-default">Left</button>
-        <button type="button" class="btn btn-default">Middle</button>
-        <button type="button" class="btn btn-default">Right</button>
+      <div class="btn-toolbar">
+        <div class="btn-group btn-group-lg">
+          <button type="button" class="btn btn-default">Left</button>
+          <button type="button" class="btn btn-default">Middle</button>
+          <button type="button" class="btn btn-default">Right</button>
+        </div>
       </div>
-      <div class="btn-group">
-        <button type="button" class="btn btn-default">Left</button>
-        <button type="button" class="btn btn-default">Middle</button>
-        <button type="button" class="btn btn-default">Right</button>
+      <div class="btn-toolbar">
+        <div class="btn-group">
+          <button type="button" class="btn btn-default">Left</button>
+          <button type="button" class="btn btn-default">Middle</button>
+          <button type="button" class="btn btn-default">Right</button>
+        </div>
       </div>
-      <div class="btn-group btn-group-sm">
-        <button type="button" class="btn btn-default">Left</button>
-        <button type="button" class="btn btn-default">Middle</button>
-        <button type="button" class="btn btn-default">Right</button>
+      <div class="btn-toolbar">
+        <div class="btn-group btn-group-sm">
+          <button type="button" class="btn btn-default">Left</button>
+          <button type="button" class="btn btn-default">Middle</button>
+          <button type="button" class="btn btn-default">Right</button>
+        </div>
       </div>
-      <div class="btn-group btn-group-xs">
-        <button type="button" class="btn btn-default">Left</button>
-        <button type="button" class="btn btn-default">Middle</button>
-        <button type="button" class="btn btn-default">Right</button>
+      <div class="btn-toolbar">
+        <div class="btn-group btn-group-xs">
+          <button type="button" class="btn btn-default">Left</button>
+          <button type="button" class="btn btn-default">Middle</button>
+          <button type="button" class="btn btn-default">Right</button>
+        </div>
       </div>
     </div>
 {% highlight html %}
-<div class="btn-toolbar">
-  <div class="btn-group btn-group-lg">...</div>
-  <div class="btn-group">...</div>
-  <div class="btn-group btn-group-sm">...</div>
-  <div class="btn-group btn-group-xs">...</div>
-</div>
+<div class="btn-group btn-group-lg">...</div>
+<div class="btn-group">...</div>
+<div class="btn-group btn-group-sm">...</div>
+<div class="btn-group btn-group-xs">...</div>
 {% endhighlight %}
 
     <h3 id="btn-groups-nested">Nested button groups</h3>
@@ -324,58 +330,66 @@ base_url: "../"
     <h3 id="btn-dropdowns-single">Single button dropdowns</h3>
     <p>Turn a button into a dropdown toggle with some basic markup changes.</p>
     <div class="bs-example">
-      <div class="btn-toolbar" style="margin-bottom: 10px;">
-        <div class="btn-group">
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group">
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Action <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group">
-          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group">
-          <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group">
-          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">Default <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Primary <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Success <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Info <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">Warning <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">Danger <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
     </div>
 {% highlight html %}
 <!-- Single button -->
@@ -396,69 +410,78 @@ base_url: "../"
     <h3 id="btn-dropdowns-split">Split button dropdowns</h3>
     <p>Similarly, create split button dropdowns with the same markup changes, only with a separate button.</p>
     <div class="bs-example">
-      <div class="btn-toolbar" style="margin: 0;">
-        <div class="btn-group">
-          <button type="button" class="btn btn-default">Action</button>
-          <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group">
-          <button type="button" class="btn btn-primary">Action</button>
-          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group">
-          <button type="button" class="btn btn-danger">Danger</button>
-          <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group">
-          <button type="button" class="btn btn-warning">Warning</button>
-          <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-        <div class="btn-group">
-          <button type="button" class="btn btn-success">Success</button>
-          <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </div><!-- /btn-group -->
-      </div><!-- /btn-toolbar -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-default">Default</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <div class="btn-group">
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
     </div>
 {% highlight html %}
 <!-- Split button -->
 <div class="btn-group">
-  <button type="button" class="btn btn-default">Action</button>
-  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+  <button type="button" class="btn btn-danger">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu">
@@ -474,7 +497,7 @@ base_url: "../"
     <h3 id="btn-dropdowns-sizes">Works with all button sizes</h3>
     <p>Button dropdowns work with buttons of all sizes.</p>
     <div class="bs-example">
-      <div class="btn-toolbar" style="margin: 0;">
+      <div class="btn-toolbar">
         <div class="btn-group">
           <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown">
             Large button <span class="caret"></span>
@@ -487,6 +510,8 @@ base_url: "../"
             <li><a href="#">Separated link</a></li>
           </ul>
         </div><!-- /btn-group -->
+      </div><!-- /btn-toolbar -->
+      <div class="btn-toolbar">
         <div class="btn-group">
           <button class="btn btn-default btn-sm dropdown-toggle" type="button" data-toggle="dropdown">
             Small button <span class="caret"></span>
@@ -499,6 +524,8 @@ base_url: "../"
             <li><a href="#">Separated link</a></li>
           </ul>
         </div><!-- /btn-group -->
+      </div><!-- /btn-toolbar -->
+      <div class="btn-toolbar">
         <div class="btn-group">
           <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown">
             Extra small button <span class="caret"></span>
@@ -1095,158 +1122,200 @@ base_url: "../"
       <h1 id="navbar">Navbar</h1>
     </div>
 
-    <h2 id="navbar-basic">Basic navbar</h2>
-    <p>To start, navbars are static (not fixed to the top) and include support for a project name and basic navigation. Place one anywhere within a <code>.container</code>, which sets the width of your site and content.</p>
+    <h2 id="navbar-default">Default navbar</h2>
+    <p>Navbars are responsive meta components that serve as navigation headers for your application or site. They begin collapsed (and are toggleable) in mobile views and become horizontal as the available viewport width increases.</p>
+
+    <div class="bs-callout bs-callout-info">
+      <h4>Customize the collapsing point</h4>
+      <p>Depending on the content in your navbar, you might need to change the point at which your navbar switches between collapsed and horizontal mode. Customize the <code>@grid-float-breakpoint</code> variable or add your own media query.</p>
+    </div>
+
     <div class="bs-example">
       <nav class="navbar" role="navigation">
-        <a class="navbar-brand" href="#">Title</a>
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Link</a></li>
-          <li><a href="#">Link</a></li>
-        </ul>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Title</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
       </nav>
-    </div><!-- /example -->
+    </div>
 {% highlight html %}
 <nav class="navbar" role="navigation">
-  <a class="navbar-brand" href="#">Title</a>
-  <ul class="nav navbar-nav">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">Link</a></li>
-    <li><a href="#">Link</a></li>
-  </ul>
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Title</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Link</a></li>
+      <li><a href="#">Link</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li><a href="#">Separated link</a></li>
+          <li><a href="#">One more separated link</a></li>
+        </ul>
+      </li>
+    </ul>
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">Link</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div><!-- /.navbar-collapse -->
 </nav>
 {% endhighlight %}
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Plugin dependency</h4>
+  <p>The responsive navbar requires the <a href="../javascript/#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
+</div>
+
 <div class="bs-callout bs-callout-warning">
   <h4>Make navbars accessible</h4>
   <p>Be sure to add a <code>role="navigation"</code> to every navbar to help with accessibility.</p>
 </div>
 
-    <h2>Navbar components</h2>
 
-    <h3 id="navbar-brand">Brand</h3>
-    <p>A simple link to show your brand or project name only requires an anchor tag.</p>
-    <div class="bs-example">
-      <nav class="navbar" role="navigation">
-        <a class="navbar-brand" href="#">Title</a>
-      </nav>
-    </div><!-- /example -->
-{% highlight html %}
-<a class="navbar-brand" href="#">Title</a>
-{% endhighlight %}
-
-    <h3 id="navbar-nav">Nav links</h3>
-    <p>Nav items are simple to add via unordered lists.</p>
-    <div class="bs-example">
-      <nav class="navbar" role="navigation">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">Link</a></li>
-          <li class="disabled"><a href="#">Disabled</a></li>
-        </ul>
-      </nav>
-    </div><!-- /example -->
-{% highlight html %}
-<ul class="nav navbar-nav">
-  <li class="active"><a href="#">Home</a></li>
-  <li><a href="#">Link</a></li>
-  <li class="disabled"><a href="#">Disabled</a></li>
-</ul>
-{% endhighlight %}
-
-    <h3 id="navbar-forms">Forms</h3>
-    <p>To properly style and position a form within the navbar, add the appropriate classes as shown below. For a default form, include <code>.navbar-form</code> and either <code>.pull-left</code> or <code>.pull-right</code> to properly align it.</p>
-    <div class="bs-example">
-
-      <nav class="navbar" role="navigation">
-        <form class="navbar-form pull-left" role="form">
-          <input type="text" class="form-control" style="width: 200px;">
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      </nav>
-
-      <nav class="navbar" role="navigation">
-        <form class="navbar-form pull-left" role="form">
-          <select name="" class="form-control" style="width: 200px;">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-          </select>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      </nav>
-
-      <nav class="navbar" role="navigation">
-        <form class="navbar-form pull-left" role="form">
-          <input type="text" class="form-control" style="width: 200px;">
-          <input type="checkbox">
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      </nav>
-
-      <nav class="navbar" role="navigation">
-        <form class="navbar-form pull-left" role="form">
-          <input type="text" class="form-control" style="width: 200px;">
-          <label class="checkbox-inline">
-            <input type="checkbox"> Remember me
-          </label>
-          <button type="submit" class="btn btn-default">Submit</button>
-        </form>
-      </nav>
-
-    </div><!-- /example -->
-{% highlight html %}
-<form class="navbar-form pull-left" role="form">
-  <input type="text" class="form-control" style="width: 200px;">
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
-{% endhighlight %}
+    <h2 id="navbar-optional-content">Optional navbar content</h2>
+    <p>Quickly add other types of content, beyond links or forms, to a navbar with a few classes.</p>
 
     <h3 id="navbar-buttons">Buttons</h3>
     <p>For buttons not residing in a <code>&lt;form&gt;</code>, add this class to vertically center buttons within a navbar.</p>
     <div class="bs-example">
       <nav class="navbar" role="navigation">
-        <a href="#" class="navbar-brand">Brand</a>
-        <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex2-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Title</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex2-collapse">
+          <button type="button" class="btn btn-default navbar-btn">Sign in</button>
+        </div>
       </nav>
     </div>
 {% highlight html %}
 <button type="button" class="btn btn-default navbar-btn">Sign in</button>
 {% endhighlight %}
 
-    <h3 id="navbar-text">Text</h3>
+    <h3 id="navbar-text">Text in navbars</h3>
     <p>Wrap strings of text in an element with <code>.navbar-text</code>, usually on a <code>&lt;p&gt;</code> tag for proper leading and color.</p>
     <div class="bs-example">
       <nav class="navbar" role="navigation">
-        <a href="#" class="navbar-brand">Brand</a>
-        <p class="navbar-text">Signed in as Mark Otto</p>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex3-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Title</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex3-collapse">
+          <p class="navbar-text">Signed in as Mark Otto</p>
+        </div>
       </nav>
     </div>
 {% highlight html %}
-<nav class="navbar" role="navigation">
-  <a href="#" class="navbar-brand">Brand</a>
-  <p class="navbar-text">Signed in as Mark Otto</p>
-</nav>
+<p class="navbar-text">Signed in as Mark Otto</p>
 {% endhighlight %}
 
-    <h3 id="navbar-links">Links</h3>
+    <h3 id="navbar-links">Non-nav links</h3>
     <p>For folks using standard links that are not within the regular navbar navigation component, use the <code>.navbar-link</code> class to add the proper colors for the default and inverse navbar options.</p>
     <div class="bs-example">
       <nav class="navbar" role="navigation">
-        <a href="#" class="navbar-brand">Brand</a>
-        <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex4-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Title</a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex4-collapse">
+          <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+        </div>
       </nav>
     </div>
 {% highlight html %}
-<nav class="navbar" role="navigation">
-  <a href="#" class="navbar-brand">Brand</a>
-  <p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
-</nav>
+<p class="navbar-text pull-right">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
 {% endhighlight %}
 
     <h3 id="navbar-component-alignment">Component alignment</h3>
-    <p>Align nav links, forms, buttons, or text, using the <code>.pull-left</code> or <code>.pull-right</code> utility classes. Both classes will add a CSS float in the specified direction. To align nav links, put them in a separate <code>&lt;ul&gt;</code> with the respective utility class applied.</p>
+    <p>Align nav links, forms, buttons, or text, using the <code>.navbar-left</code> or <code>.navbar-right</code> utility classes. Both classes will add a CSS float in the specified direction. For example, to align nav links, put them in a separate <code>&lt;ul&gt;</code> with the respective utility class applied.</p>
+    <p>These classes are mixin-ed versions of <code>.pull-left</code> and <code>.pull-right</code>, but they're scoped to media queries for easier handling of navbar components across device sizes.</p>
 
 
     <h2>Optional display variations</h2>
@@ -1255,15 +1324,26 @@ base_url: "../"
     <h3 id="navbar-fixed-top">Fixed to top</h3>
     <p>Add <code>.navbar-fixed-top</code>.</p>
     <div class="bs-example bs-navbar-top-example">
-      <nav class="navbar navbar-fixed-top">
-        <div class="container" style="width: auto;">
+      <nav class="navbar navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex5-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="#">Title</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex5-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
             <li><a href="#">Link</a></li>
           </ul>
-        </div>
+        </div><!-- /.navbar-collapse -->
       </nav>
     </div><!-- /example -->
 {% highlight html %}
@@ -1285,14 +1365,25 @@ body { padding-top: 70px; }
     <p>Add <code>.navbar-fixed-bottom</code> instead.</p>
     <div class="bs-example bs-navbar-bottom-example">
       <nav class="navbar navbar-fixed-bottom" role="navigation">
-        <div class="container" style="width: auto;">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex6-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="#">Title</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex6-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
             <li><a href="#">Link</a></li>
           </ul>
-        </div>
+        </div><!-- /.navbar-collapse -->
       </nav>
     </div><!-- /example -->
 {% highlight html %}
@@ -1313,15 +1404,26 @@ body { padding-bottom: 70px; }
     <h3 id="navbar-static-top">Static top navbar</h3>
     <p>Create a full-width navbar that scrolls away with the page by adding <code>.navbar-static-top</code>. Unlike the <code>.navbar-fixed-*</code> classes, you do not need to change any padding on the <code>body</code>.</p>
     <div class="bs-example bs-navbar-top-example">
-      <nav class="navbar navbar-static-top" role="navigation" style="margin: -1px -1px 0;">
-        <div class="container" style="width: auto;">
+      <nav class="navbar navbar-static-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex7-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="#">Title</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex7-collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="#">Link</a></li>
             <li><a href="#">Link</a></li>
           </ul>
-        </div>
+        </div><!-- /.navbar-collapse -->
       </nav>
     </div><!-- /example -->
 {% highlight html %}
@@ -1331,175 +1433,30 @@ body { padding-bottom: 70px; }
 {% endhighlight %}
 
 
-    <h2 id="navbar-responsive">Responsive navbar</h2>
-    <p>To implement a collapsing responsive navbar, wrap your navbar content in a containing div, <code>.nav-collapse.collapse</code>, and add the navbar toggle button, <code>.navbar-toggle</code>.</p>
+    <h2 id="navbar-inverted">Inverted variation</h2>
+    <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
     <div class="bs-example">
-      <nav class="navbar" role="navigation">
-        <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+      <nav class="navbar navbar-inverse" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex8-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">Title</a>
-          <div class="nav-collapse collapse navbar-responsive-collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Dropdown header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="navbar-form pull-left" action="." role="search">
-              <input type="text" class="form-control col-lg-8" placeholder="Search">
-            </form>
-            <ul class="nav navbar-nav pull-right">
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!-- /.nav-collapse -->
-        </div><!-- /.container -->
-      </nav><!-- /.navbar -->
-    </div><!-- /example -->
-{% highlight html %}
-<nav class="navbar" role="navigation">
-  <div class="container">
+        </div>
 
-    <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-
-    <!-- Be sure to leave the brand out there if you want it shown -->
-    <a class="navbar-brand" href="#">Title</a>
-
-    <!-- Place everything within .nav-collapse to hide it until above 768px -->
-    <div class="nav-collapse collapse navbar-responsive-collapse">
-      ...
-    </div><!-- /.nav-collapse -->
-  </div><!-- /.container -->
-</nav><!-- /.navbar -->
-{% endhighlight %}
-
-    <div class="bs-callout bs-callout-danger">
-      <h4>Plugin dependency</h4>
-      <p>The responsive navbar requires the <a href="../javascript/#collapse">collapse plugin</a> to be included in your version of Bootstrap.</p>
-    </div>
-
-
-    <h2 id="navbar-scrollable">Scrollable responsive navbar</h2>
-    <p>For instances where you have too many items in your navbar to fight within the viewport of a small device, add <code>.nav-collapse-scrollable</code> to your navbar's <code>.nav-collapse</code> to set a <code>max-height</code> and smooth scrolling.</p>
-    <div class="bs-example">
-      <nav class="navbar">
-        <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-navbar-scroll-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Title</a>
-          <div class="collapse nav-collapse nav-collapse-scrollable bs-navbar-scroll-collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-            </ul>
-            <form class="navbar-form pull-left" action="." role="search">
-              <input type="text" class="form-control col-lg-8" placeholder="Search">
-            </form>
-          </div><!-- /.nav-collapse -->
-        </div><!-- /.container -->
-      </nav><!-- /.navbar -->
-    </div><!-- /example -->
-{% highlight html %}
-<nav class="navbar">
-  <div class="container">
-		...
-
-    <div class="collapse nav-collapse nav-collapse-scrollable">
-      ...
-    </div><!-- /.nav-collapse -->
-
-  </div><!-- /.container -->
-</nav><!-- /.navbar -->
-{% endhighlight %}
-
-
-    <h2 id="navbar-inverted">Inverted variation</h2>
-    <p>Modify the look of the navbar by adding <code>.navbar-inverse</code>.</p>
-    <div class="bs-example">
-      <nav class="navbar navbar-inverse" role="navigation">
-        <div class="container">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Title</a>
-          <div class="nav-collapse collapse navbar-inverse-collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Dropdown header</li>
-                  <li><a href="#">Separated link</a></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="navbar-form pull-left" action="." role="search">
-              <input type="text" class="form-control col-lg-8" placeholder="Search">
-            </form>
-            <ul class="nav navbar-nav pull-right">
-              <li><a href="#">Link</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!-- /.nav-collapse -->
-        </div><!-- /.container -->
-      </nav><!-- /.navbar -->
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex8-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
     </div><!-- /example -->
 {% highlight html %}
 <nav class="navbar navbar-inverse" role="navigation">
@@ -1520,25 +1477,25 @@ body { padding-bottom: 70px; }
     <p class="lead">Indicate the current page's location within a navigational hierarchy.</p>
     <p>Separators are automatically added in CSS through <code>:before</code> and <code>content</code>.</p>
     <div class="bs-example">
-      <ul class="breadcrumb">
+      <ol class="breadcrumb">
         <li class="active">Home</li>
-      </ul>
-      <ul class="breadcrumb">
+      </ol>
+      <ol class="breadcrumb">
         <li><a href="#">Home</a></li>
         <li class="active">Library</li>
-      </ul>
-      <ul class="breadcrumb" style="margin-bottom: 5px;">
+      </ol>
+      <ol class="breadcrumb" style="margin-bottom: 5px;">
         <li><a href="#">Home</a></li>
         <li><a href="#">Library</a></li>
         <li class="active">Data</li>
-      </ul>
+      </ol>
     </div>
 {% highlight html %}
-<ul class="breadcrumb">
+<ol class="breadcrumb">
   <li><a href="#">Home</a></li>
   <li><a href="#">Library</a></li>
   <li class="active">Data</li>
-</ul>
+</ol>
 {% endhighlight %}
   </div>
 
@@ -1728,17 +1685,19 @@ body { padding-bottom: 70px; }
     <p>Add any of the below mentioned modifier classes to change the appearance of a label.</p>
     <div class="bs-example">
       <span class="label label-default">Default</span>
+      <span class="label label-primary">Primary</span>
       <span class="label label-success">Success</span>
+      <span class="label label-info">Info</span>
       <span class="label label-warning">Warning</span>
       <span class="label label-danger">Danger</span>
-      <span class="label label-info">Info</span>
     </div>
 {% highlight html %}
 <span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
 <span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
 <span class="label label-warning">Warning</span>
 <span class="label label-danger">Danger</span>
-<span class="label label-info">Info</span>
 {% endhighlight %}
 
   </div>
@@ -1973,20 +1932,20 @@ body { padding-bottom: 70px; }
     <h2 id="alerts-alternatives">Contextual alternatives</h2>
     <p>Add optional classes to change an alert's connotation.</p>
     <div class="bs-example">
-      <div class="alert alert-danger">
-        <strong>Oh snap!</strong> Change a few things up and try submitting again.
-      </div>
       <div class="alert alert-success">
         <strong>Well done!</strong> You successfully read this important alert message.
       </div>
       <div class="alert alert-info">
         <strong>Heads up!</strong> This alert needs your attention, but it's not super important.
       </div>
+      <div class="alert alert-danger">
+        <strong>Oh snap!</strong> Change a few things up and try submitting again.
+      </div>
     </div>
 {% highlight html %}
-<div class="alert alert-danger">...</div>
 <div class="alert alert-success">...</div>
 <div class="alert alert-info">...</div>
+<div class="alert alert-danger">...</div>
 {% endhighlight %}
 
     <h2 id="alerts-dismissable">Dismissable alerts</h2>
@@ -2067,13 +2026,13 @@ body { padding-bottom: 70px; }
     <h3 id="progress-alternatives">Contextual alternatives</h3>
     <p>Progress bars use some of the same button and alert classes for consistent styles.</p>
     <div class="bs-example">
-      <div class="progress" style="margin-bottom: 9px;">
-        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
-      </div>
-      <div class="progress" style="margin-bottom: 9px;">
+      <div class="progress">
         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
       </div>
-      <div class="progress" style="margin-bottom: 9px;">
+      <div class="progress">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
+      </div>
+      <div class="progress">
         <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
       </div>
       <div class="progress">
@@ -2082,13 +2041,13 @@ body { padding-bottom: 70px; }
     </div>
 {% highlight html %}
 <div class="progress">
-  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-    <span class="sr-only">20% Complete</span>
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
   </div>
 </div>
 <div class="progress">
-  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-    <span class="sr-only">40% Complete (success)</span>
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+    <span class="sr-only">20% Complete</span>
   </div>
 </div>
 <div class="progress">
@@ -2106,13 +2065,13 @@ body { padding-bottom: 70px; }
     <h3 id="progress-striped">Striped</h3>
     <p>Uses a gradient to create a striped effect. Not available in IE8.</p>
     <div class="bs-example">
-      <div class="progress progress-striped" style="margin-bottom: 9px;">
-        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
-      </div>
-      <div class="progress progress-striped" style="margin-bottom: 9px;">
+      <div class="progress progress-striped" >
         <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><span class="sr-only">40% Complete (success)</span></div>
       </div>
-      <div class="progress progress-striped" style="margin-bottom: 9px;">
+      <div class="progress progress-striped">
+        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"><span class="sr-only">20% Complete</span></div>
+      </div>
+      <div class="progress progress-striped">
         <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"><span class="sr-only">60% Complete (warning)</span></div>
       </div>
       <div class="progress progress-striped">
@@ -2121,13 +2080,13 @@ body { padding-bottom: 70px; }
     </div>
 {% highlight html %}
 <div class="progress progress-striped">
-  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-    <span class="sr-only">20% Complete</span>
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    <span class="sr-only">40% Complete (success)</span>
   </div>
 </div>
 <div class="progress progress-striped">
-  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-    <span class="sr-only">40% Complete (success)</span>
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+    <span class="sr-only">20% Complete</span>
   </div>
 </div>
 <div class="progress progress-striped">
@@ -2513,6 +2472,14 @@ body { padding-bottom: 70px; }
           Panel content
         </div>
       </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel title</h3>
+        </div>
+        <div class="panel-body">
+          Panel content
+        </div>
+      </div>
       <div class="panel panel-warning">
         <div class="panel-heading">
           <h3 class="panel-title">Panel title</h3>
@@ -2529,21 +2496,13 @@ body { padding-bottom: 70px; }
           Panel content
         </div>
       </div>
-      <div class="panel panel-info">
-        <div class="panel-heading">
-          <h3 class="panel-title">Panel title</h3>
-        </div>
-        <div class="panel-body">
-          Panel content
-        </div>
-      </div>
     </div>
 {% highlight html %}
 <div class="panel panel-primary">...</div>
 <div class="panel panel-success">...</div>
+<div class="panel panel-info">...</div>
 <div class="panel panel-warning">...</div>
 <div class="panel panel-danger">...</div>
-<div class="panel panel-info">...</div>
 {% endhighlight %}
 
     <h3 id="panels-list-group">With list groups</h3>
@@ -2612,7 +2571,7 @@ body { padding-bottom: 70px; }
     <p>Control padding and rounded corners with two optional modifier classes.</p>
     <div class="bs-example">
       <div class="well well-lg">
-        Look, I'm in a well!
+        Look, I'm in a large well!
       </div>
     </div>
 {% highlight html %}
@@ -2621,7 +2580,7 @@ body { padding-bottom: 70px; }
 
     <div class="bs-example">
       <div class="well well-sm">
-        Look, I'm in a well!
+        Look, I'm in a small well!
       </div>
     </div>
 {% highlight html %}
